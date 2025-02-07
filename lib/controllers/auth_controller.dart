@@ -1,4 +1,5 @@
-import 'dart:asy
+import 'dart:async';
+
 import 'package:get/get.dart';
 import 'package:guul_side/services/auth_service.dart';
 import 'package:guul_side/services/network_service.dart';
