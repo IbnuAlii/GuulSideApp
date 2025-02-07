@@ -17,7 +17,7 @@ class AnalyticsScreen extends StatelessWidget {
 
     final completedTasks = tasks.where((task) => task.completed).toList();
     final completionRate =
-        tasks.isNotEmpty ? completedTasks.length / tasks.length : 0.0;
+        tasks.isNotEmpty ? completedTasks.length / tasks.length : 0.1;
 
     final categoryData = _getCategoryData(tasks);
 
@@ -25,7 +25,7 @@ class AnalyticsScreen extends StatelessWidget {
       backgroundColor: AppTheme.backgroundColor,
       appBar: AppBar(
         title: const Text('Analytics',
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.black)),
         backgroundColor: AppTheme.primaryColor,
         elevation: 0,
         centerTitle: true,
